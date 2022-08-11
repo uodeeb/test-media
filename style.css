@@ -1,0 +1,231 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    background: lightgrey;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-columns: 30vw 70vw;
+    grid-template-areas: 
+    "hd hd"
+    "sd mn"
+    "ft ft"
+    ;
+}
+
+#hd {
+    background-color: blueviolet;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: hd;
+}
+
+#mn {
+    background-color: cadetblue;
+    width: 70vw;
+    height: 80vh;
+    /* display: grid;
+    grid-template-rows: 40vh 40vh;
+    grid-template-columns: 20vw 30vw 1fr;
+    grid-template-areas: 
+ "item01 item02 item03"
+ "item04 item05 item06"; */
+ grid-area: mn;
+}
+
+#sd {
+    background-color: cornflowerblue;
+    height: 80vh;
+    width: 30vw;
+    grid-area: sd;
+}
+
+#ft {
+    background-color: dimgrey;
+    height: 10vh;
+    width: 100vw;
+    grid-area: ft;
+}
+
+#logo {
+    border: 1px solid #000;
+    height: 10vh;
+    width: 20vw;
+    background-color: burlywood;
+}
+
+#navbar {
+    border: 1px solid #000;
+    height: 10vh;
+    width: 50vw;
+    background-color: violet;
+}
+
+.box {
+    border: 1px solid #000;
+    /* height: 40vh;
+    width: calc(100vh/3); */
+}
+
+
+#item01 {
+    grid-area: item01;
+}
+
+#item02 {
+    grid-area: item02;
+}
+
+#item03 {
+    grid-area: item03;
+}
+
+#item04 {
+    grid-area: item04;
+}
+
+#item05 {
+    grid-area: item05;
+}
+
+#item06 {
+    grid-area: item06;
+}
+
+/*_______________________small devices____________________*/
+@media screen and (max-width: 375px) {
+    #container {
+        background-color: aquamarine;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 20vh 40vh 30vh 10vh;
+        grid-template-columns: 100vw;
+        grid-template-areas: 
+        "hd"
+        "mn"
+        "sd"
+        "ft"
+        ;
+
+    }
+
+    #hd {
+        background-color: blueviolet;
+        height: 20vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        grid-area: hd;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #mn {
+        background-color: cadetblue;
+        width: 100vw;
+        height: 40vh;
+        grid-area: mn;
+    }
+    
+    #sd {
+        background-color: cornflowerblue;
+        height: 30vh;
+        width: 100vw;
+        grid-area: sd;
+    }
+    
+    #ft {
+        background-color: dimgrey;
+        height: 10vh;
+        width: 100vw;
+        grid-area: ft;
+    }
+
+    #logo {
+        border: 1px solid #000;
+        height: 14vh;
+        width: 100vw;
+        background-color: burlywood;
+    }
+    
+    #navbar {
+        border: 1px solid #000;
+        height: 6vh;
+        width: 100vw;
+        background-color: violet;
+    }
+    
+}
+
+/*_______________________medium devices____________________*/
+@media screen and (min-width: 376px) and (max-width: 799px) {
+    #container {
+        background-color: aquamarine;
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 20vh 70vh 10vh;
+        grid-template-columns: 25vw 25vw 25vw 25vw;
+        grid-template-areas: 
+        "hd hd hd hd"
+        "sd sd mn mn"
+        "ft ft ft ft"
+        ;
+    }
+
+    #hd {
+        background-color: blueviolet;
+        height: 20vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        grid-area: hd;
+        display: flex;
+
+    }
+    
+    #mn {
+        background-color: cadetblue;
+        width: 50vw;
+        height: 70vh;
+        grid-area: mn;
+    }
+    
+    #sd {
+        background-color: cornflowerblue;
+        height: 70vh;
+        width: 50vw;
+        grid-area: sd;
+    }
+    
+    #ft {
+        background-color: dimgrey;
+        height: 10vh;
+        width: 100vw;
+        grid-area: ft;
+    }
+
+    #logo {
+        border: 1px solid #000;
+        height:20vh;
+        width: 20vw;
+        background-color: burlywood;
+    }
+    
+    #navbar {
+        border: 1px solid #000;
+        height: 20vh;
+        width: 60vw;
+        background-color: violet;
+    }
+}
